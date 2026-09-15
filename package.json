@@ -1,0 +1,20 @@
+{
+  "name": "my-react-app",
+  "version": "1.0.0",
+  "description": "hiruy",
+  "homepage": "https://github.com/netsanetkibru47-creator/react#readme",
+  "bugs": {
+    "url": "https://github.com/netsanetkibru47-creator/react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netsanetkibru47-creator/react.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
