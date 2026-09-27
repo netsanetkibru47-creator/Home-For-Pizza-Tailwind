@@ -15,12 +15,16 @@ function Recipe() {
       <main className="recipe-detail">
         <div id="veg">
           <h1>Veg Cheese Pizza</h1>
+          <div className="image-container">
           <img
             src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_960,w_960//InstamartAssets/Receipes/veg_cheese_pizza.webp"
             alt="A veg pizza"
             width="200"
           />
+          
 
+
+          <div className="ingredients">
           <h2>Ingredients</h2>
           <ul>
             <li>1/2 cup cheese</li>
@@ -34,7 +38,12 @@ function Recipe() {
             <li>1/2 cup mozzarella cheese</li>
             <li>1/2 cup pizza sauce</li>
           </ul>
+          </div>
 
+          </div>
+
+
+   
           <h2>Preparation steps</h2>
           <ol>
             <li>Divide the cheese sauce into 2 portions.</li>
