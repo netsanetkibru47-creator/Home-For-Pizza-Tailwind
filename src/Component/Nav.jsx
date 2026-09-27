@@ -1,15 +1,25 @@
+import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
-    <div>
-        <nav className="bg-gray-800 text-white p-4">
-            <ul className="flex justify-center items-center gap-4 py-6">
-         <li><Link to="/">Home</Link></li>
-         <li><Link to="/recipe">Recipe</Link></li>
-         <li><Link to="/add-recipe">Add Recipe</Link></li>
-            </ul>
-        </nav>
-    </div>
-  )
-}
+    <header className='bg-gray-900 text-white shadow-md w-full'>
+      <nav className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-8">
+            <h1 className="text-xl font-bold tracking-tight text-white">
+                🍕Netsi's Pizza Recipe
+            </h1>
+            <ul className="flex items-center gap-6 font-medium text-gray-300">
+         <li>
+            <Link to="/" className='className="hover:text-orange-400 transition-colors"'>Home</Link>
+        </li>
+         <li>
+            <Link to="/recipe" className="hover:text-orange-400 transition-colors">Recipe</Link>
+         </li>
+         <li>
+            <Link to="/addRecipe" className="hover:text-orange-400 transition-colors">AddRecipe</Link>
+         </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
 export default Nav;

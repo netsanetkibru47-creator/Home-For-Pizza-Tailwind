@@ -2,54 +2,47 @@ import { Link } from 'react-router-dom';
 
 function Recipe() {
   return (
-    <>
-      <header className="site-header">
-        <h1>Netsi's Pizza Recipe</h1>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/recipe">Recipe</Link>
-          <Link to="/add-recipe">Add Recipe</Link>
-        </nav>
-      </header>
-
-      <main className="recipe-detail">
-        <div id="veg">
-          <h1>Veg Cheese Pizza</h1>
-          <div className="image-container">
-          <img
-            src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_960,w_960//InstamartAssets/Receipes/veg_cheese_pizza.webp"
-            alt="A veg pizza"
-            width="200"
-          />
+    <div className="min-h-screen bg-gray-50 text-gray-800 p-6 flex flex-col justify-between">
+      <main className="max-w-3xl mx-auto w-full py-12 px-4 space-y-16">
+        
+        {/* ================= VEG CHEESE PIZZA SECTION ================= */}
+        <div id="veg" className="scroll-mt-24 border-b border-gray-100 pb-10">
+          <h1 className="text-3xl font-extrabold text-gray-900 border-l-4 border-orange-500 pl-3 mb-6">
+            Veg Cheese Pizza
+          </h1>
           
-
-
-          <div className="ingredients">
-          <h2>Ingredients</h2>
-          <ul>
-            <li>1/2 cup cheese</li>
-            <li>3 tbsp butter</li>
-            <li>1 tbsp maida</li>
-            <li>1/4 cup milk</li>
-            <li>salt</li>
-            <li>Black pepper</li>
-            <li>1/2 cup baby corn</li>
-            <li>1/2 cup carrot</li>
-            <li>1/2 cup mozzarella cheese</li>
-            <li>1/2 cup pizza sauce</li>
-          </ul>
+          <div className="flex flex-col md:flex-row gap-8 items-start mb-6">
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_960,w_960//InstamartAssets/Receipes/veg_cheese_pizza.webp"
+              alt="A veg pizza"
+              className="w-52 h-52 object-cover rounded-lg shadow-sm border border-gray-100"
+            />
+            
+            <div className="bg-gray-50 p-5 rounded-lg border border-gray-200/60 w-full md:w-auto min-w-70">
+              <h2 className="text-lg font-bold text-gray-900 border-b border-gray-200 pb-1.5 mb-3 flex items-center gap-1">
+                🛒 Ingredients
+              </h2>
+              <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                <li>1/2 cup cheese</li>
+                <li>3 tbsp butter</li>
+                <li>1 tbsp maida</li>
+                <li>1/4 cup milk</li>
+                <li>salt</li>
+                <li>Black pepper</li>
+                <li>1/2 cup baby corn</li>
+                <li>1/2 cup carrot</li>
+                <li>1/2 cup mozzarella cheese</li>
+                <li>1/2 cup pizza sauce</li>
+              </ul>
+            </div>
           </div>
 
-          </div>
-
-
-   
-          <h2>Preparation steps</h2>
-          <ol>
+          <h2 className="text-lg font-bold text-gray-900 mb-3">Preparation steps</h2>
+          <ol className="list-decimal list-inside space-y-2.5 text-sm text-gray-600 mb-6 bg-orange-50/30 border border-orange-100/50 p-4 rounded-lg">
             <li>Divide the cheese sauce into 2 portions.</li>
             <li>
               Heat 1 tbsp butter and saute the diced baby corn, carrot,
-              zucchini, and <br /> red capsicum for 2-3 minutes; season with
+              zucchini, and <br className="hidden md:inline" /> red capsicum for 2-3 minutes; season with
               salt and pepper.
             </li>
             <li>Divide the vegetables into 2 portions.</li>
@@ -67,40 +60,54 @@ function Recipe() {
             </li>
           </ol>
 
-          <table>
+          <table className="w-full max-w-xs text-sm border border-gray-200 rounded-md overflow-hidden">
             <tbody>
-              <tr>
-                <th>Category</th>
-                <td>Dinner</td>
+              <tr className="border-b border-gray-200 bg-gray-50">
+                <th className="text-left font-semibold text-gray-700 px-4 py-2 border-r border-gray-200">Category</th>
+                <td className="px-4 py-2 text-gray-600">Dinner</td>
               </tr>
-              <tr>
-                <th>Serving</th>
-                <td>6</td>
+              <tr className="border-b border-gray-200">
+                <th className="text-left font-semibold text-gray-700 px-4 py-2 border-r border-gray-200">Serving</th>
+                <td className="px-4 py-2 text-gray-600">6</td>
               </tr>
-              <tr>
-                <th>Preparation Time</th>
-                <td>1 hr</td>
+              <tr className="bg-gray-50">
+                <th className="text-left font-semibold text-gray-700 px-4 py-2 border-r border-gray-200">Preparation Time</th>
+                <td className="px-4 py-2 text-gray-600">1 hr</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div id="pepperoni">
-          <h1>Pepperoni pizza</h1>
-          <img src="/images/pepperoni pizza.png" alt="pepperoni pizza" width="100" />
+        {/* ================= PEPPERONI PIZZA SECTION ================= */}
+        <div id="pepperoni" className="scroll-mt-24 pt-4">
+          <h1 className="text-3xl font-extrabold text-gray-900 border-l-4 border-red-500 pl-3 mb-6">
+            Pepperoni pizza
+          </h1>
+          
+          <div className="flex flex-col md:flex-row gap-8 items-start mb-6">
+            <img 
+              src="/images/pepperoni pizza.png" 
+              alt="pepperoni pizza" 
+              className="w-52 h-52 object-cover rounded-lg shadow-sm border border-gray-100" 
+            />
 
-          <h2>Ingredients</h2>
-          <ul>
-            <li>16 ounces pizza dough (store-bought or homemade)</li>
-            <li>1/2 cup pizza or tomato sauce</li>
-            <li>12 ounces mozzarella cheese, grated</li>
-            <li>18 to 20 slices pepperoni</li>
-            <li>1 teaspoon olive oil</li>
-            <li>Flour for rolling the dough</li>
-          </ul>
+            <div className="bg-gray-50 p-5 rounded-lg border border-gray-200/60 w-full md:w-auto min-w-70">
+              <h2 className="text-lg font-bold text-gray-900 border-b border-gray-200 pb-1.5 mb-3 flex items-center gap-1">
+                🛒 Ingredients
+              </h2>
+              <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                <li>16 ounces pizza dough (store-bought or homemade)</li>
+                <li>1/2 cup pizza or tomato sauce</li>
+                <li>12 ounces mozzarella cheese, grated</li>
+                <li>18 to 20 slices pepperoni</li>
+                <li>1 teaspoon olive oil</li>
+                <li>Flour for rolling the dough</li>
+              </ul>
+            </div>
+          </div>
 
-          <h2>Preparation steps</h2>
-          <ol>
+          <h2 className="text-lg font-bold text-gray-900 mb-3">Preparation steps</h2>
+          <ol className="list-decimal list-inside space-y-2.5 text-sm text-gray-600 mb-6 bg-red-50/20 border border-red-100/40 p-4 rounded-lg">
             <li>
               Preheat the oven: turn it to a high heat setting, around 450°F
               to 500°F (230°C to 260°C), and let it heat up completely.
@@ -125,30 +132,35 @@ function Recipe() {
             <li>Slice and serve: let it cool for a few minutes before cutting into slices.</li>
           </ol>
 
-          <table>
+          <table className="w-full max-w-xs text-sm border border-gray-200 rounded-md overflow-hidden">
             <tbody>
-              <tr>
-                <th>Category</th>
-                <td>Dinner</td>
+              <tr className="border-b border-gray-200 bg-gray-50">
+                <th className="text-left font-semibold text-gray-700 px-4 py-2 border-r border-gray-200">Category</th>
+                <td className="px-4 py-2 text-gray-600">Dinner</td>
               </tr>
-              <tr>
-                <th>Serving</th>
-                <td>4</td>
+              <tr className="border-b border-gray-200">
+                <th className="text-left font-semibold text-gray-700 px-4 py-2 border-r border-gray-200">Serving</th>
+                <td className="px-4 py-2 text-gray-600">4</td>
               </tr>
-              <tr>
-                <th>Preparation Time</th>
-                <td>40 minute</td>
+              <tr className="bg-gray-50">
+                <th className="text-left font-semibold text-gray-700 px-4 py-2 border-r border-gray-200">Preparation Time</th>
+                <td className="px-4 py-2 text-gray-600">40 minute</td>
               </tr>
             </tbody>
           </table>
         </div>
       </main>
 
-      <Link to="/">To home</Link>
-
-      <footer>&lt;&lt;&lt; &copy; Pizza recipe platform &gt;&gt;&gt;</footer>
-    </>
-  )
+      <div className="max-w-4xl mx-auto w-full text-left px-4 mb-6">
+        <Link 
+          to="/" 
+          className="inline-block text-sm font-semibold text-orange-600 hover:text-orange-700 hover:underline transition-colors"
+        >
+          ← To home
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 export default Recipe;
