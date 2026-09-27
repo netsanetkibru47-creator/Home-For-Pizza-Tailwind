@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 function Home() {
   return (
     <>
@@ -7,11 +5,6 @@ function Home() {
         <div>
           <h1>Netsi's Pizza Recipe</h1>
         </div>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/recipe">Recipe</Link>
-          <Link to="/add-recipe">Add Recipe</Link>
-        </nav>
       </header>
 
       <p>
