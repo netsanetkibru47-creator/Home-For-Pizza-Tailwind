@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <header className='bg-gray-900 text-white shadow-md w-full'>
-      <nav className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-8">
+      <nav className=" px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-8 rounded-2xl border border-amber-600 ">
             <h1 className="text-xl font-bold tracking-tight text-white">
                 🍕Netsi's Pizza Recipe
             </h1>
