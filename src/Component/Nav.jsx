@@ -21,7 +21,7 @@ const Nav = ({
               darkMode ? 'text-white' : 'text-gray-900'
             }`}
           >
-            🍕 Netsi's Pizza Recipe
+            🍕 Casa Pizza Recipe
           </h1>
         </div>
 
