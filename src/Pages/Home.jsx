@@ -15,7 +15,7 @@ function Home({ darkMode, scrollToRecipes }) {
             onClick={scrollToRecipes}
             className="px-8 py-3.5 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-xl shadow-md transform hover:-translate-y-0.5 transition-all cursor-pointer uppercase tracking-wider text-sm"
           >
-            Explore Recipes 👇
+            Explore Recipes/ 👇
           </button>
         </div>
       </section>
