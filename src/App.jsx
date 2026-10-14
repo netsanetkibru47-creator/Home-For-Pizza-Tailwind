@@ -42,7 +42,9 @@ function App() {
         <Recipe darkMode={darkMode} />
       </div>
 
-      <div ref={faqSectionRef} className="scroll-mt-20 flex items-center justify-center mx-auto">
+      <div ref={faqSectionRef}  className={` scroll-mt-20 flex items-center justify-center mx-auto w-full py-16 px-4 border-t transition-colors duration-200 ${
+      darkMode ? 'bg-gray-1000/40 border-gray-900' : 'bg-orange-80/20 border-orange-80'
+    }`} >
         <div className={` p-5 h-140 w-130 rounded-2xl border text-sm animate-fadeIn transition-all shadow-inner ${
                 darkMode ? 'bg-slate-900 border-orange-900/60 text-gray-100' : 'bg-orange-50/40 border-orange-200 text-gray-800 py-16 px-4'
               }`}>
@@ -63,8 +65,49 @@ function App() {
         </div>
       </div>
 
-      <div ref={ratingSectionRef} className="scroll-mt-20 py-20 px-6 text-center shadow-inner transition-all duration-200 ${
-        darkMode ? 'bg-linear-to-r from-gray-800 to-slate-800 text-indigo-50' : 'bg-linear-to-r from-amber-100 to-amber-500 text-black">
+
+      <div ref={ratingSectionRef}  className={` scroll-mt-20 w-full py-16 px-4 border-t transition-colors duration-200 ${
+      darkMode ? 'bg-gray-700/40 border-gray-600' : 'bg-orange-40/20 border-orange-70'
+    }`}>
+        <h2 className="text-3xl font-bold text-orange-500 text-center">
+           Rate Your Experience ⭐
+        </h2>
+        <p className="text-center mt-3">
+          Enjoyed our pizza recipes? Rate your experience and help us improve!
+        </p>
+
+        <div className="py-12 px-6 text-center">
+
+  <h2 className="text-3xl font-bold text-orange-500 mb-3">
+    ⭐ Rate Your Experience
+  </h2>
+
+  <p className="text-gray-500 mb-6">
+    How much do you love our pizza recipes?
+    Share your rating with us!
+  </p>
+
+  <div className="flex justify-center gap-3 text-4xl mb-6">
+    <button className="hover:scale-125 transition">⭐</button>
+    <button className="hover:scale-125 transition">⭐</button>
+    <button className="hover:scale-125 transition">⭐</button>
+    <button className="hover:scale-125 transition">⭐</button>
+    <button className="hover:scale-125 transition">⭐</button>
+  </div>
+
+  <textarea
+    placeholder="Share your feedback..."
+    className="w-full max-w-lg p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400"
+    rows="3"
+  />
+
+  <div>
+    <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-xl transition">
+      Submit Rating
+    </button>
+  </div>
+
+</div>
 
       </div>
 
